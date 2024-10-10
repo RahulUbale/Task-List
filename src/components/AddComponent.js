@@ -26,7 +26,6 @@ const AddComponent = ({ addItem, items }) => {
         <div className="create-section">
             <h3 class="textcolor">List App</h3>
 
-            {/* Textarea for adding custom items */}
             <textarea
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
@@ -36,7 +35,6 @@ const AddComponent = ({ addItem, items }) => {
             />
             <button onClick={handleAddItem}>Add</button>
 
-            {/* Predefined items as buttons */}
             <div className="predefined-buttons">
                 {predefinedItems.map((item, index) => (
                     <button key={index} className="item-button" onClick={() => addItem(item)}>
@@ -45,7 +43,6 @@ const AddComponent = ({ addItem, items }) => {
                 ))}
             </div>
 
-            {/* Display the list of added items */}
             <div className="item-list">
                 <h4 class="textcolor">Items Added:</h4>
                
