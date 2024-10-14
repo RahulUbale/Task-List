@@ -2,9 +2,11 @@ import React from 'react';
 
 const ViewComponent = ({ items, searchTerm, setSearchTerm, onEdit, onDelete }) => {
     
-    const filteredItems = items.filter(item =>
-        item.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+    const filteredItems = items
+        .map((item, index) => ({ item, index })) // Keep track of the original index
+        .filter(({ item }) =>
+            item.toLowerCase().includes(searchTerm.toLowerCase())
+        );
 
     return (
         <div>
@@ -19,7 +21,7 @@ const ViewComponent = ({ items, searchTerm, setSearchTerm, onEdit, onDelete }) =
             </div>
             <div className="item-list">
                 {filteredItems.length > 0 ? (
-                    filteredItems.map((item, index) => (
+                    filteredItems.map(({ item, index }) => (
                         <div key={index} className="item">
                             <span>{item}</span>
                             <div className="button-group">
@@ -30,9 +32,7 @@ const ViewComponent = ({ items, searchTerm, setSearchTerm, onEdit, onDelete }) =
                     ))
                 ) : (
                     <p>No items found matching your search.</p>
-                )
-                
-                }
+                )}
             </div>
         </div>
     );
