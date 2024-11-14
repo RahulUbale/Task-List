@@ -10,7 +10,7 @@
   display: flex; /* Use flexbox */
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center the buttons */
-  padding: 10px; /* Padding around the content */
+  padding: 10px; 
   transition: width 0.3s; /* Smooth transition for width change */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
@@ -25,9 +25,9 @@
   color: white; /* Text color */
   border: none; /* No border */
   cursor: pointer; /* Pointer cursor on hover */
-  margin: 5px 0; /* Vertical spacing between buttons */
-  width: 100%; /* Full width of the navigation bar */
-  border-radius: 4px; /* Rounded corners */
+  margin: 5px 0; 
+  width: 100%; 
+  border-radius: 4px; 
   transition: background 0.3s, transform 0.3s; /* Smooth transition for effects */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for buttons */
 }

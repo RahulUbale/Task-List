@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AddComponent from './AddComponent';
 import ViewComponent from './ViewComponent';
 import DeleteComponent from './DeleteComponent';
-import EditModal from './EditModal'; // Import your EditModal
+import EditModal from './EditModal';
 import NavigationBar from './NavigationBar';
 import '../styles/MainContent.css';
 

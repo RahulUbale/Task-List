@@ -49,7 +49,7 @@ const AddComponent = ({ addItem, items }) => {
                 {items.length === 0 ? (
                     <div>
                     <img 
-                      src="https://i.ibb.co/h1drRz2/dog-8514297-640.png" 
+                      src="https://i.ibb.co/ftVY8Ph/dog-8514297-640.png" 
                       style={{ width: '130px', height: 'auto' }} 
                        alt="No items added yet"/>
                     <p>No items added yet.</p>
